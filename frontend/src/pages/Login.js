@@ -23,7 +23,7 @@ function Login() {
       return handleError("email and password are required");
 
     try {
-      const response = await fetch(`http://localhost:8080/auth/login`, {
+      const response = await fetch(`https://gen-web-2-api.vercel.app/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginInfo),
