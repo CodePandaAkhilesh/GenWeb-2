@@ -1,0 +1,29 @@
+/* Root styles for dark mode (applied via class on <html> or <body>) */
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Button styling */
+.dark-mode-toggle {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.dark-mode-toggle:hover {
+  transform: scale(1.05);
+  background-color: #d0d0d0;
+}
+
+/* Dark mode button override */
+.dark .dark-mode-toggle {
+  background-color: #333333;
+  color: #ffffff;
+}

@@ -1,0 +1,13 @@
+.home-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;        /* Prevents scroll */
+  background-color: #202123;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;  /* Prevents size overflow due to padding */
+}
+
+html.dark .home-layout {
+  background-color: #111827;
+}
